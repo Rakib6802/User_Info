@@ -1,0 +1,27 @@
+{
+  "name": "user_information",
+  "version": "1.0.0",
+  "description": "Backend application with NodeJS that explore user information.",
+  "main": "app.js",
+  "scripts": {
+    "start": "npx pm2 start index.js",
+    "test": "echo test",
+    "nodemon": "nodemon index.js --legacy-watch",
+    "forever-start": "forever start -o console.log index.js",
+    "forever-restart": "forever restart index.js",
+    "node": "node index.js"
+  },
+  "author": "Rakib Hossain",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-session": "^2.1.0",
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.18.0",
+    "knex": "^3.1.0",
+    "moment-timezone": "^0.5.44",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1"
+  }
+}
